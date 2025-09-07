@@ -69,6 +69,23 @@ function checkWin(playerFields){
         gamePaused = true;
 
     }
+
     }
-    return;
+   const squares = document.querySelectorAll('.square');
+   let counter=0;
+    squares.forEach(square => {
+        if(!square.hasChildNodes()){
+            return;  
+        }
+        counter++;
+        
+
+    });
+    
+    if(counter==8){
+         document.getElementById("message").style.display="block";
+        document.getElementById("text").innerText="Remíza!";
+        gamePaused = true;
+    }
+     
 }
