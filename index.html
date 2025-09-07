@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+     <svg id="cross_tmp" width="80" height="80">
+        <line x1="10" y1="10" x2="70" y2="70" stroke="red" stroke-width="8" />
+        <line x1="70" y1="10" x2="10" y2="70" stroke="red" stroke-width="8" />
+        </svg>
+        <svg id="circle_tmp" width="80" height="80">
+        <circle cx="40" cy="40" r="30" stroke="blue" stroke-width="8" fill="none" />
+        </svg>
+    <div class="board">
+        <div onclick="changeElement(this)" class="square 1"></div>
+        <div onclick="changeElement(this)" class="square 2"></div>
+        <div onclick="changeElement(this)" class="square 3"></div>
+        <div onclick="changeElement(this)" class="square 4"></div>
+        <div onclick="changeElement(this)" class="square 5"></div>
+        <div onclick="changeElement(this)" class="square 6"></div>
+        <div onclick="changeElement(this)" class="square 7"></div>
+        <div onclick="changeElement(this)" class="square 8"></div>
+        <div onclick="changeElement(this)" class="square 9"></div>
+    </div>
+    <div id="message">
+        <p id="text"></p>
+        <button id="reset" onclick="Reset()">Reset</button>
+    </div>
+    
+</body>
+</html>
