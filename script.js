@@ -38,6 +38,7 @@ function changeElement(id){
         elem=document.getElementById("circle_tmp");
     }
     if(id.hasChildNodes()){
+         gamePaused=false;
         return;
     }
      const fieldNumber = parseInt(id.classList[1]); 
